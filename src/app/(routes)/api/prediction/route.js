@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
 
-export const maxDuration = 30; // Denne funksjonen kan kjøre i maksimalt 30 sekunder
+export const maxDuration = 50; // Denne funksjonen kan kjøre i maksimalt 30 sekunder
 export const dynamic = "force-dynamic";
 
 const openai = new OpenAI({
