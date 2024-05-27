@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "app/api/**/*": {
+      "maxDuration": 50 // Alle funksjoner under app/api/ kan kjøre i maksimalt 30 sekunder
+    }
+  }
+}
