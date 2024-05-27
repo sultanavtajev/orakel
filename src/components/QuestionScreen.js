@@ -490,10 +490,10 @@ export default function Questionnaire({ onSubmit }) {
           onChange={(e) => setTimeFrame(e.target.value)}
           className="p-2 border rounded"
         >
-          <option value="dag">Neste dag</option>
-          <option value="uke">En uke frem</option>
-          <option value="måned">En måned frem</option>
-          <option value="år">Et år frem</option>
+          <option value="neste dag">Neste dag</option>
+          <option value="en uke frem">En uke frem</option>
+          <option value="en måned frem">En måned frem</option>
+          <option value="et år frem">Et år frem</option>
         </select>
       </div>
       <button
