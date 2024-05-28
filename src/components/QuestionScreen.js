@@ -424,84 +424,85 @@ export default function Questionnaire({ onSubmit }) {
     onSubmit(answers, timeFrame);
   };
 
-  return (
-    <div className="p-4">
-      <h2 className="text-2xl mb-4">Svar på spørsmålene:</h2>
-      <h3 className="text-xl mb-4">Generelle Spørsmål:</h3>
-      {generalQuestions.map((q) => (
-        <div key={q.id} className="mb-4">
-          <p>{q.question}</p>
-          {q.type === "text" && (
-            <input
-              type="text"
-              value={answers[q.id] || ""}
-              onChange={(e) => handleChange(q.id, e.target.value)}
-              className="p-2 border rounded w-full"
-            />
-          )}
-          {q.type === "select" && (
-            <select
-              value={answers[q.id] || ""}
-              onChange={(e) => handleChange(q.id, e.target.value)}
-              className="p-2 border rounded w-full"
-            >
-              <option value="">Velg</option>
-              {q.options.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-          )}
-          {q.type === "number" && (
-            <input
-              type="number"
-              value={answers[q.id] || ""}
-              onChange={(e) => handleChange(q.id, e.target.value)}
-              className="p-2 border rounded w-full"
-            />
-          )}
-        </div>
-      ))}
-      <h3 className="text-xl mb-4">Jungiansk Typeindeks:</h3>
-      {jungianQuestions.map((q) => (
-        <div key={q.id} className="mb-4">
-          <p>{q.question}</p>
-          {q.type === "radio" &&
-            q.options.map((option) => (
-              <label key={option} className="block">
-                <input
-                  type="radio"
-                  name={`question-${q.id}`}
-                  value={option}
-                  checked={answers[q.id] === option}
-                  onChange={() => handleChange(q.id, option)}
-                  className="mr-2"
-                />
+return (
+  <div className="p-4 max-w-4xl mx-auto bg-white">
+    <h2 className="text-2xl mb-4 text-black">Svar på spørsmålene:</h2>
+    <h3 className="text-xl mb-4 text-black">Generelle Spørsmål:</h3>
+    {generalQuestions.map((q) => (
+      <div key={q.id} className="mb-4">
+        <p className="text-black">{q.question}</p>
+        {q.type === "text" && (
+          <input
+            type="text"
+            value={answers[q.id] || ""}
+            onChange={(e) => handleChange(q.id, e.target.value)}
+            className="p-2 border rounded w-full text-black"
+          />
+        )}
+        {q.type === "select" && (
+          <select
+            value={answers[q.id] || ""}
+            onChange={(e) => handleChange(q.id, e.target.value)}
+            className="p-2 border rounded w-full text-black"
+          >
+            <option value="">Velg</option>
+            {q.options.map((option) => (
+              <option key={option} value={option}>
                 {option}
-              </label>
+              </option>
             ))}
-        </div>
-      ))}
-      <div className="mb-4">
-        <label className="block mb-2">Velg tidsramme:</label>
-        <select
-          value={timeFrame}
-          onChange={(e) => setTimeFrame(e.target.value)}
-          className="p-2 border rounded"
-        >
-          <option value="neste dag">Neste dag</option>
-          <option value="en uke frem">En uke frem</option>
-          <option value="en måned frem">En måned frem</option>
-          <option value="et år frem">Et år frem</option>
-        </select>
+          </select>
+        )}
+        {q.type === "number" && (
+          <input
+            type="number"
+            value={answers[q.id] || ""}
+            onChange={(e) => handleChange(q.id, e.target.value)}
+            className="p-2 border rounded w-full text-black"
+          />
+        )}
       </div>
-      <button
-        onClick={handleSubmit}
-        className="bg-blue-500 text-white px-4 py-2 rounded"
+    ))}
+    <h3 className="text-xl mb-4 text-black">Jungiansk Typeindeks:</h3>
+    {jungianQuestions.map((q) => (
+      <div key={q.id} className="mb-4">
+        <p className="text-black">{q.question}</p>
+        {q.type === "radio" &&
+          q.options.map((option) => (
+            <label key={option} className="block text-black">
+              <input
+                type="radio"
+                name={`question-${q.id}`}
+                value={option}
+                checked={answers[q.id] === option}
+                onChange={() => handleChange(q.id, option)}
+                className="mr-2"
+              />
+              {option}
+            </label>
+          ))}
+      </div>
+    ))}
+    <div className="mb-4">
+      <label className="block mb-2 text-black">Velg tidsramme:</label>
+      <select
+        value={timeFrame}
+        onChange={(e) => setTimeFrame(e.target.value)}
+        className="p-2 border rounded w-full text-black"
       >
-        Få spådom
-      </button>
+        <option value="neste dag">Neste dag</option>
+        <option value="en uke frem">En uke frem</option>
+        <option value="en måned frem">En måned frem</option>
+        <option value="et år frem">Et år frem</option>
+      </select>
     </div>
-  );
+    <button
+      onClick={handleSubmit}
+      className="bg-black text-white px-4 py-2 rounded mt-4 w-full sm:w-auto"
+    >
+      Få spådommen din
+    </button>
+  </div>
+);
+
 }
