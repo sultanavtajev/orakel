@@ -48,9 +48,6 @@ function PredictionComponent() {
       <div className="fixed inset-0 flex items-center justify-center z-50">
         <div className="absolute inset-0 bg-background/50 backdrop-blur-sm"></div>
         <div className="relative w-12 h-12 rounded-full border-4 border-primary border-t-transparent animate-spin" />
-        <div className="flex items-center justify-center h-screen">
-          Laster spådom...
-        </div>
       </div>
     );
   }
