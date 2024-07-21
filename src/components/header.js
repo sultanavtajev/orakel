@@ -18,7 +18,7 @@ export default function Header() {
         className="flex items-center justify-center"
         prefetch={false}
       >
-        <CameraIcon className="h-6 w-6" />
+        <PersonIcon className="h-6 w-6" />
         <span className="sr-only">Bildeanalyse</span>
       </Link>
       <div className="ml-auto flex items-center gap-4 sm:gap-6">
@@ -123,7 +123,7 @@ export default function Header() {
   );
 }
 
-function CameraIcon(props) {
+function PersonIcon(props) {
   return (
     <svg
       {...props}
@@ -137,8 +137,8 @@ function CameraIcon(props) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
-      <circle cx="12" cy="13" r="3" />
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+      <circle cx="12" cy="7" r="4"></circle>
     </svg>
   );
 }

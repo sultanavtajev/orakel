@@ -8,11 +8,11 @@ export default function Komponent() {
       <div className="space-y-8">
         <div className="text-center">
           <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">
-            Lås opp kraften til AI-bildeanalyse
+            Oppdag din fremtid med vår spådomsplattform
           </h1>
           <p className="mt-4 text-muted-foreground md:text-xl">
-            Oppdag hvordan vår app kan transformere bildene dine med avansert
-            AI-teknologi.
+            Utforsk hva fremtiden har i vente for deg med våre avanserte
+            AI-spådommer.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -21,11 +21,11 @@ export default function Komponent() {
               <UploadIcon className="flex-shrink-0 w-8 h-8 text-primary" />
               <div>
                 <h3 className="text-xl font-semibold">
-                  Steg 1: Last opp ditt bilde
+                  Steg 1: Svar på spørsmålene
                 </h3>
                 <p className="text-muted-foreground">
-                  Begynn ved å klikke på "Last opp bilde"-knappen og velg bildet
-                  du vil analysere.
+                  Begynn ved å klikke på "Start spådommen"-knappen og svar på
+                  noen enkle spørsmål.
                 </p>
               </div>
             </div>
@@ -33,11 +33,11 @@ export default function Komponent() {
               <ScanIcon className="flex-shrink-0 w-8 h-8 text-primary" />
               <div>
                 <h3 className="text-xl font-semibold">
-                  Steg 2: Analyser bildet
+                  Steg 2: AI analyserer svarene dine
                 </h3>
                 <p className="text-muted-foreground">
-                  Når bildet ditt er lastet opp, vil vår avanserte AI analysere
-                  det og gi detaljerte innsikter.
+                  Når du har svart på spørsmålene, vil vår avanserte AI
+                  analysere svarene dine for å lage en personlig spådom.
                 </p>
               </div>
             </div>
@@ -45,11 +45,11 @@ export default function Komponent() {
               <DownloadIcon className="flex-shrink-0 w-8 h-8 text-primary" />
               <div>
                 <h3 className="text-xl font-semibold">
-                  Steg 3: Last ned resultatene
+                  Steg 3: Motta din spådom
                 </h3>
                 <p className="text-muted-foreground">
-                  Etter at analysen er fullført, kan du laste ned en rapport med
-                  alle innsiktene om bildet ditt.
+                  Etter analysen, kan du laste ned en detaljert rapport med din
+                  spådom for fremtiden.
                 </p>
               </div>
             </div>
@@ -58,24 +58,22 @@ export default function Komponent() {
             <div className="flex items-start gap-4">
               <FlagIcon className="flex-shrink-0 w-8 h-8 text-primary" />
               <div>
-                <h3 className="text-xl font-semibold">Lås opp fordelene</h3>
+                <h3 className="text-xl font-semibold">Utforsk fordelene</h3>
                 <p className="text-muted-foreground">
-                  Vår AI-bildeanalyse kan hjelpe deg med:
+                  Vår spådomsplattform kan hjelpe deg med:
                 </p>
                 <ul className="mt-4 space-y-2 text-muted-foreground">
                   <li className="flex items-center gap-2">
                     <CheckIcon className="w-4 h-4 text-primary" />
-                    Identifisere objekter, personer og scener i bildene dine
+                    Forstå dine fremtidige muligheter og utfordringer
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckIcon className="w-4 h-4 text-primary" />
-                    Oppdage og klassifisere visuelle elementer som farger,
-                    teksturer og mønstre
+                    Få innsikt i dine personlige og profesjonelle veier
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckIcon className="w-4 h-4 text-primary" />
-                    Få innsikter for å forbedre fotografering, markedsføring
-                    eller produktutforming
+                    Motta råd for å forbedre ditt liv basert på spådommene
                   </li>
                 </ul>
               </div>
@@ -83,12 +81,10 @@ export default function Komponent() {
             <div className="flex items-start gap-4">
               <CheckIcon className="flex-shrink-0 w-8 h-8 text-primary" />
               <div>
-                <h3 className="text-xl font-semibold">
-                  Uovertruffen nøyaktighet
-                </h3>
+                <h3 className="text-xl font-semibold">Høy nøyaktighet</h3>
                 <p className="text-muted-foreground">
-                  Våre AI-modeller er trent på millioner av bilder, noe som
-                  sikrer nøyaktige og pålitelige resultater hver gang.
+                  Våre AI-modeller er trent på et stort utvalg data for å sikre
+                  nøyaktige og pålitelige spådommer.
                 </p>
               </div>
             </div>
@@ -96,11 +92,11 @@ export default function Komponent() {
         </div>
         <div className="flex justify-center">
           <Link
-            href="/logg-inn"
+            href="/question"
             className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             prefetch={false}
           >
-            Kom i gang
+            Start spådommen
           </Link>
         </div>
       </div>

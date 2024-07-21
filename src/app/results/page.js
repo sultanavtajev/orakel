@@ -6,39 +6,40 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
 export default function Prediction() {
-   const searchParams = useSearchParams();
-   const answersParam = searchParams.get("answers");
-   const timeFrameParam = searchParams.get("timeFrame");
+  const searchParams = useSearchParams();
+  const answersParam = searchParams.get("answers");
+  const timeFrameParam = searchParams.get("timeFrame");
+  const router = useRouter();
 
-   const [answers] = useState(answersParam ? JSON.parse(answersParam) : {});
-   const [timeFrame] = useState(timeFrameParam || "dag");
-   const [prediction, setPrediction] = useState({});
-   const [loading, setLoading] = useState(true);
-   const [error, setError] = useState(null);
-   
- useEffect(() => {
-   const fetchPrediction = async () => {
-     try {
-       const response = await axios.post("/api/prediction", {
-         answers,
-         timeFrame,
-       });
-       setPrediction(response.data.data.prediction);
-     } catch (error) {
-       setError(
-         error.response?.data?.error?.message ||
-           "Det oppsto en feil. Vennligst prøv igjen."
-       );
-     } finally {
-       setLoading(false);
-     }
-   };
+  const [answers] = useState(answersParam ? JSON.parse(answersParam) : {});
+  const [timeFrame] = useState(timeFrameParam || "dag");
+  const [prediction, setPrediction] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-   if (Object.keys(answers).length > 0 && timeFrame) {
-     fetchPrediction();
-   }
- }, [answers, timeFrame]);
-  
+  useEffect(() => {
+    const fetchPrediction = async () => {
+      try {
+        const response = await axios.post("/api/prediction", {
+          answers,
+          timeFrame,
+        });
+        setPrediction(response.data.data.prediction);
+      } catch (error) {
+        setError(
+          error.response?.data?.error?.message ||
+            "Det oppsto en feil. Vennligst prøv igjen."
+        );
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (Object.keys(answers).length > 0 && timeFrame) {
+      fetchPrediction();
+    }
+  }, [answers, timeFrame]);
+
   if (loading) {
     return (
       <div className="fixed inset-0 flex items-center justify-center z-50">
@@ -71,7 +72,9 @@ export default function Prediction() {
             <h2 className="text-2xl font-medium text-gray-900 dark:text-gray-100">
               Resultater fra analysen
             </h2>
-            <h2 className="text-lg font-semibold">For periode: 1 {timeFrame}</h2>
+            <h2 className="text-lg font-semibold">
+              For periode: 1 {timeFrame}
+            </h2>
           </div>
           <div className="border-t border-gray-200 dark:border-gray-700 px-4 py-5 sm:p-0">
             <div className="p-4 rounded-lg w-full items-center justify-center">

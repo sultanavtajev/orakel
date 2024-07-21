@@ -24,7 +24,7 @@ export default function Komponent() {
       <div className="grid md:grid-cols-3 gap-6">
         <Card>
           <CardHeader>
-            <CardTitle>10 Bilder</CardTitle>
+            <CardTitle>10 Spådommer</CardTitle>
             <CardDescription>Gratis</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
@@ -35,11 +35,11 @@ export default function Komponent() {
             <ul className="grid gap-2 text-muted-foreground">
               <li className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                10 bilder per måned
+                10 spådommer per måned
               </li>
               <li className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                Grunnleggende bildeanalyse
+                Grunnleggende analyse
               </li>
               <li className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
@@ -57,7 +57,7 @@ export default function Komponent() {
         </Card>
         <Card className="border-2 border-primary">
           <CardHeader>
-            <CardTitle>100 Bilder</CardTitle>
+            <CardTitle>100 Spådommer</CardTitle>
             <CardDescription>79 kr per måned</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
@@ -68,11 +68,11 @@ export default function Komponent() {
             <ul className="grid gap-2 text-muted-foreground">
               <li className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                100 bilder per måned
+                100 spådommer per måned
               </li>
               <li className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                Avansert bildeanalyse
+                Avansert analyse
               </li>
               <li className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
@@ -90,7 +90,7 @@ export default function Komponent() {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>500 Bilder</CardTitle>
+            <CardTitle>500 Spådommer</CardTitle>
             <CardDescription>299 kr per måned</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
@@ -101,11 +101,11 @@ export default function Komponent() {
             <ul className="grid gap-2 text-muted-foreground">
               <li className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                500 bilder per måned
+                500 spådommer per måned
               </li>
               <li className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
-                Avansert bildeanalyse
+                Avansert analyse
               </li>
               <li className="flex items-center gap-2">
                 <CheckIcon className="w-5 h-5 fill-primary" />
