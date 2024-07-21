@@ -95,27 +95,27 @@ export async function POST(req) {
         generalAnswers
       )}, Jungiansk Typeindeks: ${JSON.stringify(
         jungianAnswers
-      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåmkone. Beskriv hvordan brukeren kan forbedre helsen sin, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Avslutt svaret ditt alltid med hilser fra "din spåkone Paolla". Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
+      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåmkone. Beskriv hvordan brukeren kan forbedre helsen sin, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
       karriere: `Lag en spådom for karriere basert på følgende informasjon om brukeren: ${JSON.stringify(
         generalAnswers
       )}, Jungiansk Typeindeks: ${JSON.stringify(
         jungianAnswers
-      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåkone. Beskriv hvordan brukeren kan forbedre karrieren sin, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Avslutt svaret ditt alltid med hilser fra "din spåkone Paolla". Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
+      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåkone. Beskriv hvordan brukeren kan forbedre karrieren sin, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
       forhold: `Lag en spådom for forhold basert på følgende informasjon om brukeren: ${JSON.stringify(
         generalAnswers
       )}, Jungiansk Typeindeks: ${JSON.stringify(
         jungianAnswers
-      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåkone. Beskriv hvordan brukeren kan forbedre forholdene sin, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Avslutt svaret ditt alltid med hilser fra "din spåkone Paolla". Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
+      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåkone. Beskriv hvordan brukeren kan forbedre forholdene sin, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
       sexliv: `Lag en spådom for sexliv basert på følgende informasjon om brukeren: ${JSON.stringify(
         generalAnswers
       )}, Jungiansk Typeindeks: ${JSON.stringify(
         jungianAnswers
-      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåkone. Beskriv hvordan brukeren kan forbedre sexlivet sitt, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Avslutt svaret ditt alltid med hilser fra "din spåkone Paolla". Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
+      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåkone. Beskriv hvordan brukeren kan forbedre sexlivet sitt, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
       "personlig vekst": `Lag en spådom for personlig vekst basert på følgende informasjon om brukeren: ${JSON.stringify(
         generalAnswers
       )}, Jungiansk Typeindeks: ${JSON.stringify(
         jungianAnswers
-      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåkone. Beskriv hvordan brukeren kan forbedre sin personlige vekst, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Avslutt svaret ditt alltid med hilser fra "din spåkone Paolla". Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
+      )} og periode: ${timeFrame}. Skriv minst 200 ord. Teksten må være en sammenhengende tekst. Bruk gjerne relevante metaforer, visdom, quotes og lignende. Tilpass svaret som om det skulle vært en spådom fra en spåkone. Beskriv hvordan brukeren kan forbedre sin personlige vekst, hva som kan være utfordringer og hvordan de kan overkomme disse. Beskriv også hva som kan skje i fremtiden hvis brukeren følger rådene dine. Inkluder gjerne historier og eksempler. Ekskluder hilsninger og bruk kun fornavnet til brukeren.`,
     };
 
     const results = await Promise.all(

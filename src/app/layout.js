@@ -1,17 +1,25 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./styles/globals.css";
+import Header from "@/components/header.js";
+import Footer from "@/components/footer.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Diogines spår deg",
-  description: "Få en spådom om fremtiden din fra Diogines.",
+  title: "Spådommer om din fremtid",
+  description: "Få en spådom om fremtiden din basert på kunstig intelligens",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="h-full">
+      <body className={`${inter.className} h-full`}>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
