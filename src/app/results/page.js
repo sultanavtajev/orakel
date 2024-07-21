@@ -1,11 +1,14 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import { Suspense } from "react";
+ 
 
-export default function Prediction() {
+function PredictionComponent() {
   const searchParams = useSearchParams();
   const answersParam = searchParams.get("answers");
   const timeFrameParam = searchParams.get("timeFrame");
@@ -120,5 +123,13 @@ export default function Prediction() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function Prediction() {
+  return (
+    <Suspense fallback={<div>Laster innhold...</div>}>
+      <PredictionComponent />
+    </Suspense>
   );
 }
